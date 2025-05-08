@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media print {
+  @page {
+    margin: 2cm;
+  }
+
+  body {
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+    background: rgba(15, 81, 50, 0.02) !important;
+  }
+
+  section {
+    page-break-inside: avoid;
+    background: transparent !important;
+  }
+
+  .bg-green-900, .bg-green-800, .bg-green-700 {
+    background-color: rgba(15, 81, 50, 0.05) !important;
+  }
+
+  .text-white {
+    color: #166534 !important;
+  }
+
+  .text-gray-200, .text-gray-300, .text-gray-400 {
+    color: #1a472a !important;
+  }
+
+  a {
+    text-decoration: none !important;
+    color: #166534 !important;
+  }
+
+  .print:hidden {
+    display: none !important;
+  }
+
+  html {
+    font-size: 11pt;
+  }
+
+  h1, h2, h3 {
+    color: #15803d !important;
+  }
+}
