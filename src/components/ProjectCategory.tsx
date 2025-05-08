@@ -13,8 +13,9 @@ export const ProjectCategory: React.FC<ProjectCategoryProps> = ({
   category,
 }) => {
   return (
-    <div className="bg-gray-50 rounded-xl shadow-sm overflow-hidden hover:shadow-md transition-shadow duration-300 border border-gray-200">
-      <div className="bg-green-700 p-4 flex items-center">
+    // <div className="bg-gradient-to-b from-green-900/30 to-white rounded-xl shadow-sm overflow-hidden hover:shadow-md transition-shadow duration-300 border border-gray-200">
+    <div className="bg-green-600/20 backdrop-blur-sm rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-all duration-300 border border-green-100 group">
+        <div className="bg-green-700 p-4 flex items-center">
         <div className="bg-white/10 p-2 rounded-full text-green-200 mr-3">
           {category.icon}
         </div>
