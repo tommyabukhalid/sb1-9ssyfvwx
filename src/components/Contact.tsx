@@ -1,3 +1,4 @@
+// Contact.tsx
 import React from 'react';
 import { MapPin, Phone, Mail, Globe } from 'lucide-react';
 import { QRCode } from './QRCode';
@@ -16,9 +17,10 @@ export const Contact: React.FC = () => {
           </p>
         </div>
 
-        <div className="flex flex-col lg:flex-row gap-10 items-center justify-center max-w-5xl mx-auto">
-          <div className="bg-green-100 rounded-xl shadow-md p-8 w-full lg:w-2/3">
-            <h3 className="text-2xl font-bold mb-6 text-green-800">
+        <div className="flex flex-col gap-6 items-center justify-center max-w-4xl mx-auto">
+          {/* Card Utama */}
+          <div className="bg-green-50 rounded-xl border border-green-200 shadow-md p-8 w-full">
+            <h3 className="text-2xl font-bold text-green-800 mb-6">
               PT. VEAT INDONESIA GRUP
             </h3>
 
@@ -67,16 +69,27 @@ export const Contact: React.FC = () => {
             </div>
           </div>
 
-          <div className="flex flex-col md:flex-row lg:flex-col gap-6 w-full lg:w-1/3 ">
+          {/* QR Code Cards */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full">
             <QRCode
-              title="Phone"
+              title="Phone QR Code"
               value="tel:+6281315655950"
               icon={<Phone size={24} className="text-green-700" />}
             />
             <QRCode
-              title="Website"
+              title="Website QR Code"
               value="http://www.veatindo.com"
               icon={<Globe size={24} className="text-green-700" />}
+            />
+            <QRCode
+              title="Email QR Code"
+              value="mailto:sales@veatindo.com"
+              icon={<Mail size={24} className="text-green-700" />}
+            />
+            <QRCode
+              title="Location QR Code"
+              value="https://maps.google.com/?q=Laladon+Baru+Residence+BlokJ-11+Ciomas+Bogor"
+              icon={<MapPin size={24} className="text-green-700" />}
             />
           </div>
         </div>

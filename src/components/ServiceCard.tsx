@@ -44,7 +44,7 @@ export const ServiceCard: React.FC<ServiceProps> = ({ service }) => {
               transition={{ duration: 0.3, delay: index * 0.1 }}
               className="flex items-center text-sm text-gray-700"
             >
-              <div className="w-1.5 h-1.5 bg-green-500 rounded-full mr-2"></div>
+              <div className="w-1.5 h-1.5 bg-green-800 rounded-full mr-2"></div>
               {detail}
             </motion.li>
           ))}

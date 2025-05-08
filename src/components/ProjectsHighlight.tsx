@@ -72,7 +72,8 @@ export const ProjectsHighlight: React.FC = () => {
   return (
     <section
       id="projects"
-      className="py-20 bg-gradient-to-b from-green-900/30 to-white"
+      // className="py-20 bg-gradient-to-b from-green-900/30 to-white"
+      className="py-20 bg-gradient-to-b from-green-900/40 to-green-900/20"
     >
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
@@ -83,7 +84,7 @@ export const ProjectsHighlight: React.FC = () => {
             Over the years, we have completed numerous projects across diverse
             sectors. Here's a highlight of our project experience.
           </p>
-          <div className="mt-4">
+          {/* <div className="mt-4">
             <a
               href="#projects"
               className="text-green-600 font-medium hover:text-green-800 transition-colors duration-200 inline-flex items-center"
@@ -104,7 +105,7 @@ export const ProjectsHighlight: React.FC = () => {
                 />
               </svg>
             </a>
-          </div>
+          </div> */}
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -112,6 +113,8 @@ export const ProjectsHighlight: React.FC = () => {
             <ProjectCategory key={category.id} category={category} />
           ))}
         </div>
+
+
       </div>
     </section>
   );
